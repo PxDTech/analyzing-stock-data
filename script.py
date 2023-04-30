@@ -14,3 +14,5 @@ def get_returns(prices):
   return returns
 
 print(get_returns(amazon_prices))
+
+#Something
