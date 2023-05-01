@@ -13,6 +13,9 @@ def get_returns(prices):
     returns.append(calculate_log_return(i, i + 1))
   return returns
 
-print(get_returns(amazon_prices))
+amazon_returns = get_returns(amazon_prices)
+ebay_returns = get_returns(ebay_prices)
 
-#Something
+print(amazon_returns)
+print(ebay_returns)
+
