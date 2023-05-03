@@ -16,6 +16,9 @@ def get_returns(prices):
 amazon_returns = get_returns(amazon_prices)
 ebay_returns = get_returns(ebay_prices)
 
-print(amazon_returns)
-print(ebay_returns)
+print([display_as_percentage(item) for item in amazon_returns])
+print([display_as_percentage(item) for item in ebay_returns])
+
+print([display_as_percentage(sum(amazon_returns))])
+print([display_as_percentage(sum(ebay_returns))])
 
